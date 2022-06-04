@@ -15,6 +15,13 @@
 		04F31498284A673800FE57FC /* Palm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F31497284A673800FE57FC /* Palm.swift */; };
 		04F3149A284AAA0300FE57FC /* Palm1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F31499284AAA0300FE57FC /* Palm1.swift */; };
 		04F3149C284ABA3B00FE57FC /* BranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3149B284ABA3B00FE57FC /* BranchView.swift */; };
+		04F3149F284B487100FE57FC /* MainViewPalm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3149E284B487100FE57FC /* MainViewPalm.swift */; };
+		04F314A4284B4D1F00FE57FC /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F314A3284B4D1F00FE57FC /* Board.swift */; };
+		04F314A9284B988500FE57FC /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F314A8284B988500FE57FC /* Leg.swift */; };
+		04F314AB284BBEB100FE57FC /* MainViewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F314AA284BBEB100FE57FC /* MainViewPerson.swift */; };
+		04F314AD284BC09B00FE57FC /* LegLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F314AC284BC09B00FE57FC /* LegLeft.swift */; };
+		04F314AF284BC62C00FE57FC /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F314AE284BC62C00FE57FC /* Head.swift */; };
+		04F314B1284BF40200FE57FC /* ArmRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F314B0284BF40200FE57FC /* ArmRight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,13 @@
 		04F31497284A673800FE57FC /* Palm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palm.swift; sourceTree = "<group>"; };
 		04F31499284AAA0300FE57FC /* Palm1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palm1.swift; sourceTree = "<group>"; };
 		04F3149B284ABA3B00FE57FC /* BranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchView.swift; sourceTree = "<group>"; };
+		04F3149E284B487100FE57FC /* MainViewPalm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPalm.swift; sourceTree = "<group>"; };
+		04F314A3284B4D1F00FE57FC /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		04F314A8284B988500FE57FC /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		04F314AA284BBEB100FE57FC /* MainViewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPerson.swift; sourceTree = "<group>"; };
+		04F314AC284BC09B00FE57FC /* LegLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegLeft.swift; sourceTree = "<group>"; };
+		04F314AE284BC62C00FE57FC /* Head.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		04F314B0284BF40200FE57FC /* ArmRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmRight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +75,10 @@
 			children = (
 				04F31487284A374900FE57FC /* SurfingApp.swift */,
 				04F31489284A374900FE57FC /* ContentView.swift */,
-				04F31495284A42BC00FE57FC /* SunView.swift */,
-				04F31497284A673800FE57FC /* Palm.swift */,
-				04F31499284AAA0300FE57FC /* Palm1.swift */,
-				04F3149B284ABA3B00FE57FC /* BranchView.swift */,
+				04F314A5284B78DB00FE57FC /* Person */,
+				04F314A0284B4C5700FE57FC /* ElementSun */,
+				04F314A1284B4CE500FE57FC /* Board */,
+				04F3149D284B480200FE57FC /* ElementPalm */,
 				04F3148B284A374B00FE57FC /* Assets.xcassets */,
 				04F3148D284A374B00FE57FC /* Preview Content */,
 			);
@@ -77,6 +91,45 @@
 				04F3148E284A374B00FE57FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04F3149D284B480200FE57FC /* ElementPalm */ = {
+			isa = PBXGroup;
+			children = (
+				04F3149E284B487100FE57FC /* MainViewPalm.swift */,
+				04F31497284A673800FE57FC /* Palm.swift */,
+				04F31499284AAA0300FE57FC /* Palm1.swift */,
+				04F3149B284ABA3B00FE57FC /* BranchView.swift */,
+			);
+			path = ElementPalm;
+			sourceTree = "<group>";
+		};
+		04F314A0284B4C5700FE57FC /* ElementSun */ = {
+			isa = PBXGroup;
+			children = (
+				04F31495284A42BC00FE57FC /* SunView.swift */,
+			);
+			path = ElementSun;
+			sourceTree = "<group>";
+		};
+		04F314A1284B4CE500FE57FC /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				04F314A3284B4D1F00FE57FC /* Board.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		04F314A5284B78DB00FE57FC /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				04F314AA284BBEB100FE57FC /* MainViewPerson.swift */,
+				04F314AE284BC62C00FE57FC /* Head.swift */,
+				04F314A8284B988500FE57FC /* Leg.swift */,
+				04F314AC284BC09B00FE57FC /* LegLeft.swift */,
+				04F314B0284BF40200FE57FC /* ArmRight.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +203,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F3149C284ABA3B00FE57FC /* BranchView.swift in Sources */,
+				04F314AB284BBEB100FE57FC /* MainViewPerson.swift in Sources */,
+				04F314B1284BF40200FE57FC /* ArmRight.swift in Sources */,
 				04F3148A284A374900FE57FC /* ContentView.swift in Sources */,
 				04F31496284A42BC00FE57FC /* SunView.swift in Sources */,
+				04F314AF284BC62C00FE57FC /* Head.swift in Sources */,
 				04F3149A284AAA0300FE57FC /* Palm1.swift in Sources */,
+				04F3149F284B487100FE57FC /* MainViewPalm.swift in Sources */,
 				04F31488284A374900FE57FC /* SurfingApp.swift in Sources */,
+				04F314A4284B4D1F00FE57FC /* Board.swift in Sources */,
+				04F314A9284B988500FE57FC /* Leg.swift in Sources */,
 				04F31498284A673800FE57FC /* Palm.swift in Sources */,
+				04F314AD284BC09B00FE57FC /* LegLeft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

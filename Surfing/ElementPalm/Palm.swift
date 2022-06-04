@@ -13,7 +13,6 @@ struct Palm: View {
             let width = geometry.size.width
             let height = geometry.size.height
             let size = min(width, height)
-            let min = size * 0.1
             let max = size * 0.9
             let middle = size / 2
             
@@ -42,13 +41,9 @@ struct Palm: View {
                     
                     path.addQuadCurve(to: CGPoint(x: max * 1, y: middle * 1.62),
                                       control: CGPoint(x: max * 0.99, y: middle * 1.6))
-                    
-
             }
             
             }
-            
-            
     }
 }
 }
@@ -56,6 +51,6 @@ struct Palm: View {
 struct Palm_Previews: PreviewProvider {
     static var previews: some View {
         Palm()
-            .frame(width: 250, height: 250)
+            .frame(width: 450, height: 450)
     }
 }
