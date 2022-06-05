@@ -19,6 +19,12 @@ struct MainViewPerson: View {
                             leading: 0,
                             bottom: 0,
                             trailing: 0))
+            
+//           ArmLeft()
+//                .frame(width: 380,
+//                       height: 380)
+            
+            
             Board()
                 .frame(width: 360,
                        height: 370)
@@ -33,10 +39,10 @@ struct MainViewPerson: View {
                        height: 380)
             
             Head()
-                .frame(width: 180,
-                       height: 180)
-                .padding(EdgeInsets(top:-240,
-                                    leading: -55,
+                .frame(width: 150,
+                       height: 150)
+                .padding(EdgeInsets(top:-220,
+                                    leading: -45,
                                     bottom: 0,
                                     trailing: 0))
         }

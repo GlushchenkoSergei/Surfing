@@ -20,9 +20,7 @@ struct ContentView: View {
                 .padding(EdgeInsets(top: -210, leading: -190, bottom: 0, trailing: 0))
             
             LegLeft()
-                
                 .padding(EdgeInsets(top: 130, leading: -10, bottom: 0, trailing: 0))
-            
             
             MainViewPerson()
                 .frame(width: 360, height: 360)
