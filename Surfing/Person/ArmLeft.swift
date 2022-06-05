@@ -197,14 +197,14 @@ struct ArmLeft: View {
                     path.addQuadCurve(to: CGPoint(x: middle*0.79, y: middle*0.7),
                                       control: CGPoint(x: middle*0.69, y: middle*0.8))
                     
-                    path.addQuadCurve(to: CGPoint(x: middle*0.83, y: middle*0.6),
+                    path.addQuadCurve(to: CGPoint(x: middle*0.85, y: middle*0.66),
                                       control: CGPoint(x: middle*0.8, y: middle*0.65))
                     
-                    path.addQuadCurve(to: CGPoint(x: middle*0.93, y: middle*0.5),
-                                      control: CGPoint(x: middle*0.86, y: middle*0.56))
+                    path.addQuadCurve(to: CGPoint(x: middle*0.93, y: middle*0.6),
+                                      control: CGPoint(x: middle*0.86, y: middle*0.59))
                     
                     path.addQuadCurve(to: CGPoint(x: middle*1.02, y: middle*0.46),
-                                      control: CGPoint(x: middle*0.93, y: middle*0.5))
+                                      control: CGPoint(x: middle*1, y: middle*0.5))
                     
                     path.addQuadCurve(to: CGPoint(x: middle*1.02, y: middle*0.44),
                                       control: CGPoint(x: middle*1.05, y: middle*0.46))

@@ -17,12 +17,31 @@ struct ContentView: View {
                 .ignoresSafeArea()
             SunView()
                 .frame(width: 160, height: 160)
-                .padding(EdgeInsets(top: -210, leading: -190, bottom: 0, trailing: 0))
- 
+                .padding(EdgeInsets(top: -260, leading: -190, bottom: 0, trailing: 0))
+            CloudMergeView()
+                .foregroundColor(Color("background"))
+            
+            Wave()
+                .frame(width: 120, height: 120)
+                .padding(EdgeInsets(top: 0, leading: -170, bottom: 0, trailing: 0))
+            
+            WaveClon()
+                .frame(width: 90, height: 90)
+                .padding(EdgeInsets(top: 140, leading: -170, bottom: 0, trailing: 0))
+            
+            Wave()
+                .frame(width: 70, height: 70)
+                .padding(EdgeInsets(top: 250, leading: -160, bottom: 0, trailing: 0))
+            
+            
             PersonWithBoard()
+            
+            
+            
             WithEctraBranch()
-            
-            
+                .foregroundColor(Color("palm"))
+                
+
         }
     }
     
