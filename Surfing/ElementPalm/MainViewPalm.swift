@@ -55,10 +55,20 @@ struct MainViewPalm: View {
                 .rotationEffect(.degrees(50))
                 .frame(width: 200, height: 200)
                 .padding(EdgeInsets(top: -90, leading: 370, bottom: 0, trailing: 0))
-        }
-        .foregroundColor(color)
-    }
         
+       
+        
+        //MARK: - Двойные ветки
+        DoubleBranch()
+                .rotationEffect(.degrees(300))
+            .padding(EdgeInsets(top: -290, leading: -30, bottom: 0, trailing: 0))
+        
+            DoubleBranch()
+                    .rotationEffect(.degrees(230))
+                .padding(EdgeInsets(top: -110, leading: 30, bottom: 0, trailing: 0))
+            
+    }
+}
 }
 
 struct MainViewPalm_Previews: PreviewProvider {
