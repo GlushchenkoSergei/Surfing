@@ -11,13 +11,6 @@ struct MainViewPerson: View {
     var body: some View {
         
         ZStack {
-            Head()
-                .frame(width: 180,
-                       height: 180)
-                .padding(EdgeInsets(top:-240,
-                            leading: -55,
-                            bottom: 0,
-                            trailing: 0))
             
             Leg()
                 .frame(width: 340,
@@ -34,7 +27,18 @@ struct MainViewPerson: View {
                             leading: 12,
                             bottom: 0,
                             trailing: 0))
-           
+            
+            ArmRight()
+                .frame(width: 380,
+                       height: 380)
+            
+            Head()
+                .frame(width: 180,
+                       height: 180)
+                .padding(EdgeInsets(top:-240,
+                                    leading: -55,
+                                    bottom: 0,
+                                    trailing: 0))
         }
         
     }
