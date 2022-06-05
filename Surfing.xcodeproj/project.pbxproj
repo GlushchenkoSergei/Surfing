@@ -21,6 +21,14 @@
 		049B1C5A284CDCE7000EAEC0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C59284CDCE7000EAEC0 /* Wave.swift */; };
 		049B1C5D284CE89F000EAEC0 /* WaveClon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C5C284CE89F000EAEC0 /* WaveClon.swift */; };
 		049B1C5F284CEACE000EAEC0 /* WaveGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C5E284CEACE000EAEC0 /* WaveGroup.swift */; };
+		049B1C61284CF07E000EAEC0 /* FrameForWaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C60284CF07E000EAEC0 /* FrameForWaves.swift */; };
+		049B1C63284D0319000EAEC0 /* FrameForWaves2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C62284D0319000EAEC0 /* FrameForWaves2.swift */; };
+		049B1C65284D081A000EAEC0 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C64284D081A000EAEC0 /* Test.swift */; };
+		049B1C67284D0A0E000EAEC0 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C66284D0A0E000EAEC0 /* FrameView.swift */; };
+		049B1C6A284D10AB000EAEC0 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C69284D10AB000EAEC0 /* Blur.swift */; };
+		049B1C6C284D14EE000EAEC0 /* BlurClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C6B284D14EE000EAEC0 /* BlurClone.swift */; };
+		049B1C6E284D15E1000EAEC0 /* BlurryForWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C6D284D15E1000EAEC0 /* BlurryForWater.swift */; };
+		049B1C70284D629B000EAEC0 /* PalmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1C6F284D629B000EAEC0 /* PalmView.swift */; };
 		04F31488284A374900FE57FC /* SurfingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F31487284A374900FE57FC /* SurfingApp.swift */; };
 		04F3148A284A374900FE57FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F31489284A374900FE57FC /* ContentView.swift */; };
 		04F3148C284A374B00FE57FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F3148B284A374B00FE57FC /* Assets.xcassets */; };
@@ -53,6 +61,14 @@
 		049B1C59284CDCE7000EAEC0 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		049B1C5C284CE89F000EAEC0 /* WaveClon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveClon.swift; sourceTree = "<group>"; };
 		049B1C5E284CEACE000EAEC0 /* WaveGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveGroup.swift; sourceTree = "<group>"; };
+		049B1C60284CF07E000EAEC0 /* FrameForWaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameForWaves.swift; sourceTree = "<group>"; };
+		049B1C62284D0319000EAEC0 /* FrameForWaves2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameForWaves2.swift; sourceTree = "<group>"; };
+		049B1C64284D081A000EAEC0 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		049B1C66284D0A0E000EAEC0 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		049B1C69284D10AB000EAEC0 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		049B1C6B284D14EE000EAEC0 /* BlurClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurClone.swift; sourceTree = "<group>"; };
+		049B1C6D284D15E1000EAEC0 /* BlurryForWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurryForWater.swift; sourceTree = "<group>"; };
+		049B1C6F284D629B000EAEC0 /* PalmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalmView.swift; sourceTree = "<group>"; };
 		04F31484284A374900FE57FC /* Surfing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surfing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F31487284A374900FE57FC /* SurfingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingApp.swift; sourceTree = "<group>"; };
 		04F31489284A374900FE57FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,11 +115,25 @@
 		049B1C5B284CDD01000EAEC0 /* Waves */ = {
 			isa = PBXGroup;
 			children = (
+				049B1C66284D0A0E000EAEC0 /* FrameView.swift */,
+				049B1C62284D0319000EAEC0 /* FrameForWaves2.swift */,
+				049B1C64284D081A000EAEC0 /* Test.swift */,
+				049B1C60284CF07E000EAEC0 /* FrameForWaves.swift */,
 				049B1C5E284CEACE000EAEC0 /* WaveGroup.swift */,
 				049B1C59284CDCE7000EAEC0 /* Wave.swift */,
 				049B1C5C284CE89F000EAEC0 /* WaveClon.swift */,
 			);
 			path = Waves;
+			sourceTree = "<group>";
+		};
+		049B1C68284D1093000EAEC0 /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				049B1C69284D10AB000EAEC0 /* Blur.swift */,
+				049B1C6B284D14EE000EAEC0 /* BlurClone.swift */,
+				049B1C6D284D15E1000EAEC0 /* BlurryForWater.swift */,
+			);
+			path = Blur;
 			sourceTree = "<group>";
 		};
 		04F3147B284A374800FE57FC = {
@@ -129,6 +159,7 @@
 				04F31489284A374900FE57FC /* ContentView.swift */,
 				04F314A5284B78DB00FE57FC /* Person */,
 				049B1C5B284CDD01000EAEC0 /* Waves */,
+				049B1C68284D1093000EAEC0 /* Blur */,
 				04F314A0284B4C5700FE57FC /* ElementSun */,
 				04F314A1284B4CE500FE57FC /* Board */,
 				04F3149D284B480200FE57FC /* ElementPalm */,
@@ -151,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				049B1C47284CBE79000EAEC0 /* WithEctraBranch.swift */,
+				049B1C6F284D629B000EAEC0 /* PalmView.swift */,
 				04F3149E284B487100FE57FC /* MainViewPalm.swift */,
 				04F31497284A673800FE57FC /* Palm.swift */,
 				04F31499284AAA0300FE57FC /* Palm1.swift */,
@@ -261,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F3149C284ABA3B00FE57FC /* BranchView.swift in Sources */,
+				049B1C6C284D14EE000EAEC0 /* BlurClone.swift in Sources */,
+				049B1C6E284D15E1000EAEC0 /* BlurryForWater.swift in Sources */,
 				049B1C4A284CC910000EAEC0 /* Cloud.swift in Sources */,
 				049B1C53284CD2D7000EAEC0 /* CloudGroup1.swift in Sources */,
 				049B1C42284CA0BA000EAEC0 /* ArmLeft.swift in Sources */,
@@ -268,17 +302,22 @@
 				04F314AB284BBEB100FE57FC /* MainViewPerson.swift in Sources */,
 				04F314B1284BF40200FE57FC /* ArmRight.swift in Sources */,
 				04F3148A284A374900FE57FC /* ContentView.swift in Sources */,
+				049B1C67284D0A0E000EAEC0 /* FrameView.swift in Sources */,
 				049B1C5A284CDCE7000EAEC0 /* Wave.swift in Sources */,
 				049B1C44284CB904000EAEC0 /* PersonWithBoard.swift in Sources */,
+				049B1C61284CF07E000EAEC0 /* FrameForWaves.swift in Sources */,
 				049B1C46284CBB15000EAEC0 /* DoubleBranch.swift in Sources */,
 				04F31496284A42BC00FE57FC /* SunView.swift in Sources */,
 				049B1C4F284CCCFF000EAEC0 /* Cloud3.swift in Sources */,
 				04F314AF284BC62C00FE57FC /* Head.swift in Sources */,
 				049B1C4D284CCB42000EAEC0 /* Cloud2.swift in Sources */,
 				04F3149A284AAA0300FE57FC /* Palm1.swift in Sources */,
+				049B1C6A284D10AB000EAEC0 /* Blur.swift in Sources */,
+				049B1C65284D081A000EAEC0 /* Test.swift in Sources */,
 				04F3149F284B487100FE57FC /* MainViewPalm.swift in Sources */,
 				04F31488284A374900FE57FC /* SurfingApp.swift in Sources */,
 				049B1C5D284CE89F000EAEC0 /* WaveClon.swift in Sources */,
+				049B1C63284D0319000EAEC0 /* FrameForWaves2.swift in Sources */,
 				049B1C58284CD949000EAEC0 /* CloudMergeView.swift in Sources */,
 				049B1C55284CD533000EAEC0 /* CloudGroup2.swift in Sources */,
 				04F314A4284B4D1F00FE57FC /* Board.swift in Sources */,
@@ -286,6 +325,7 @@
 				04F314A9284B988500FE57FC /* Leg.swift in Sources */,
 				04F31498284A673800FE57FC /* Palm.swift in Sources */,
 				049B1C48284CBE79000EAEC0 /* WithEctraBranch.swift in Sources */,
+				049B1C70284D629B000EAEC0 /* PalmView.swift in Sources */,
 				04F314AD284BC09B00FE57FC /* LegLeft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

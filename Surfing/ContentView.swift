@@ -9,44 +9,92 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
+    @State private var animationCloud = false
+    @State private var animationWater = false
+    @State private var animationBlurWater = false
+    @State private var animatePlay = false
+    @State private var animatePalm = false
     
     var body: some View {
         ZStack {
             Color("background")
                 .ignoresSafeArea()
+            
+            WaveGroup()
+                .foregroundColor(Color("sun"))
+                .frame(width: 160, height: 160)
+                .padding(EdgeInsets(top: animationWater ? 460 : -390,
+                                    leading: -190,
+                                    bottom: 0,
+                                    trailing: 0))
+            
+            
+            BlurryForWater()
+                .foregroundColor(Color("background"))
+                .frame(width: 150, height: 200)
+                .padding(EdgeInsets(top: animationBlurWater ? -160 : 690,
+                                    leading: -170,
+                                    bottom: 0,
+                                    trailing: 0))
+            
+            FrameView()
+                .foregroundColor(Color("background"))
+            
             SunView()
                 .frame(width: 160, height: 160)
                 .padding(EdgeInsets(top: -260, leading: -190, bottom: 0, trailing: 0))
+            
             CloudMergeView()
                 .foregroundColor(Color("background"))
-            
-            Wave()
-                .frame(width: 120, height: 120)
-                .padding(EdgeInsets(top: 0, leading: -170, bottom: 0, trailing: 0))
-            
-            WaveClon()
-                .frame(width: 90, height: 90)
-                .padding(EdgeInsets(top: 140, leading: -170, bottom: 0, trailing: 0))
-            
-            Wave()
-                .frame(width: 70, height: 70)
-                .padding(EdgeInsets(top: 250, leading: -160, bottom: 0, trailing: 0))
-            
+                .padding(EdgeInsets(top: 0,
+                                    leading: animationCloud ? 300: -100,
+                                    bottom: 0,
+                                    trailing: 0))
             
             PersonWithBoard()
             
             
-            
             WithEctraBranch()
+                .rotationEffect(.degrees(animatePalm ? -4 : 0))
                 .foregroundColor(Color("palm"))
-                
+            
+            
+            Button(action: animate) {
+                Image(systemName: "backward.end.alt.fill" )
+                    .resizable()
+                    .rotationEffect(.degrees(animatePlay ? 0 : 180))
+                    .frame(width: 50, height: 50)
+            }
+            .foregroundColor(Color("board2"))
+            .offset(x: 0, y: 350)
 
+ 
         }
     }
-    
 }
-    
+
+extension ContentView {
+
+    func animate() {
+        withAnimation(.linear(duration: 15).repeatCount(4)) {
+            self.animationCloud.toggle()
+        }
+        withAnimation(.linear(duration: 150).speed(7).delay(0)) {
+            self.animationWater.toggle()
+        }
+        
+        withAnimation(.easeIn(duration: 20)) {
+            self.animationBlurWater.toggle()
+        }
+        withAnimation(.linear(duration: 1)) {
+            self.animatePlay.toggle()
+        }
+        
+        withAnimation(.linear(duration: 5)) {
+            self.animatePalm.toggle()
+        }
+    }
+}
 
 
 struct ContentView_Previews: PreviewProvider {
