@@ -23,7 +23,7 @@ struct ArmLeft: View {
                 let height = geometry.size.height
                 let size = min(width, height)
                 let min = size * 0.1
-                let max = size * 0.9
+       
                 let middle = size / 2
                 
                 Path { path in

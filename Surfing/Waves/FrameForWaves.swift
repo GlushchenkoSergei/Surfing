@@ -10,13 +10,7 @@ import SwiftUI
 struct FrameForWaves: View {
     var body: some View {
         
-        GeometryReader { geometry in
-            let width = geometry.size.width
-            let height = geometry.size.height
-            let size = min(width, height)
-            let min = size * 0.1
-            let max = size * 0.9
-            let middle = size / 2
+       
             
             ZStack{
                 
@@ -65,7 +59,7 @@ struct FrameForWaves: View {
             
     }
 }
-}
+
  
            
  

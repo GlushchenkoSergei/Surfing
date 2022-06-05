@@ -19,7 +19,6 @@ struct Leg: View {
                 let height = geometry.size.height
                 let size = min(width, height)
                 let max = size * 0.9
-                let min = size * 0.1
                 let middle = size / 2
                 
                 Path { path in

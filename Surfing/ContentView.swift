@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var animationWater = false
     @State private var animationBlurWater = false
     @State private var animatePlay = false
-    @State private var animatePalm = false
+
     
     var body: some View {
         ZStack {
@@ -52,10 +52,9 @@ struct ContentView: View {
                                     trailing: 0))
             
             PersonWithBoard()
-            
+                
             
             WithEctraBranch()
-                .rotationEffect(.degrees(animatePalm ? -4 : 0))
                 .foregroundColor(Color("palm"))
             
             
@@ -88,10 +87,6 @@ extension ContentView {
         }
         withAnimation(.linear(duration: 1)) {
             self.animatePlay.toggle()
-        }
-        
-        withAnimation(.linear(duration: 5)) {
-            self.animatePalm.toggle()
         }
     }
 }
