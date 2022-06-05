@@ -154,10 +154,68 @@ struct ArmLeft: View {
                 }
                 .stroke(color1)
                 
-                MainViewPerson()
-          
+                
+                Path { path in
+                    path.move(to: CGPoint(x: middle*0.75, y: min*2.2))
+                
+                    path.addQuadCurve(to: CGPoint(x: middle*0.69, y: min*2.4),
+                                      control: CGPoint(x: middle*0.7, y: min*2.3))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.67, y: min*3),
+                                      control: CGPoint(x: middle*0.677, y: min*2.7))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.599, y: middle*0.82),
+                                      control: CGPoint(x: middle*0.65, y: middle*0.7))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.578, y: middle*0.88),
+                                      control: CGPoint(x: middle*0.59, y: middle*0.86))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.57, y: middle*0.95),
+                                      control: CGPoint(x: middle*0.56, y: middle*0.92))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.63, y: middle*0.938),
+                                      control: CGPoint(x: middle*0.6, y: middle*0.95))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.64, y: middle*0.84),
+                                      control: CGPoint(x: middle*0.63, y: middle*0.9))
+                    //up
+                    path.addQuadCurve(to: CGPoint(x: middle*0.66, y: middle*0.78),
+                                      control: CGPoint(x: middle*0.65, y: middle*0.8))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.704, y: middle*0.7),
+                                      control: CGPoint(x: middle*0.68, y: middle*0.75))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.73, y: middle*0.6),
+                                      control: CGPoint(x: middle*0.72, y: middle*0.65))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.706, y: middle*0.74),
+                                      control: CGPoint(x: middle*0.74, y: middle*0.65))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.69, y: middle*0.82),
+                                      control: CGPoint(x: middle*0.69, y: middle*0.8))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.79, y: middle*0.7),
+                                      control: CGPoint(x: middle*0.69, y: middle*0.8))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.83, y: middle*0.6),
+                                      control: CGPoint(x: middle*0.8, y: middle*0.65))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.93, y: middle*0.5),
+                                      control: CGPoint(x: middle*0.86, y: middle*0.56))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*1.02, y: middle*0.46),
+                                      control: CGPoint(x: middle*0.93, y: middle*0.5))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*1.02, y: middle*0.44),
+                                      control: CGPoint(x: middle*1.05, y: middle*0.46))
+                    
+                    path.addQuadCurve(to: CGPoint(x: middle*0.75, y: min*2.2),
+                                      control: CGPoint(x: middle*0.95, y: middle*0.46))
+                    
+                    path.addLine(to: CGPoint(x: min, y: min))
             }
-            
+                .foregroundColor(color1)
+            }
         }
     }
 }

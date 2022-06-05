@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-
+    
     
     var body: some View {
         ZStack {
@@ -29,13 +29,13 @@ struct ContentView: View {
             Head()
                 .frame(width: 170, height: 190)
                 .padding(EdgeInsets(top: -60, leading: -80, bottom: 0, trailing: 0))
-           MainViewPalm()
-    
+            MainViewPalm()
+            
             
         }
-        }
-        
     }
+    
+}
     
 
 
