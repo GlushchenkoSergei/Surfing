@@ -28,7 +28,6 @@ struct ContentView: View {
                                     bottom: 0,
                                     trailing: 0))
             
-            
             BlurryForWater()
                 .foregroundColor(Color("background"))
                 .frame(width: 150, height: 200)
@@ -39,11 +38,7 @@ struct ContentView: View {
             
             FrameView()
                 .foregroundColor(Color("background"))
-//                .foregroundColor(Color.red)
-
-            
-            
-            
+   
             SunView()
                 .frame(width: 160, height: 160)
                 .padding(EdgeInsets(top: -260, leading: -190, bottom: 0, trailing: 0))
@@ -57,21 +52,18 @@ struct ContentView: View {
             
             PersonWithBoard()
                 
-            
             WithEctraBranch()
                 .foregroundColor(Color("palm"))
-            
             
             Button(action: animate) {
                 Image(systemName: "backward.end.alt.fill" )
                     .resizable()
-                    .rotationEffect(.degrees(animatePlay ? 0 : 180))
+                    .rotation3DEffect(.degrees(animatePlay ? 0 : 180),
+                                      axis: (x: 0, y: 1, z: 0))
                     .frame(width: 50, height: 50)
             }
             .foregroundColor(Color("board2"))
             .offset(x: 0, y: 350)
-
- 
         }
     }
 }
@@ -89,7 +81,7 @@ extension ContentView {
         withAnimation(.easeIn(duration: 20)) {
             self.animationBlurWater.toggle()
         }
-        withAnimation(.linear(duration: 1)) {
+        withAnimation(.linear(duration: 0.5)) {
             self.animatePlay.toggle()
         }
     }
