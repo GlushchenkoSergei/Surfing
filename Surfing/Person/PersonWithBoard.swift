@@ -13,7 +13,6 @@ struct PersonWithBoard: View {
             LegLeft()
                 .padding(EdgeInsets(top: 130, leading: -10, bottom: 0, trailing: 0))
         
-        
         MainViewPerson()
             .frame(width: 360, height: 360)
             .padding(EdgeInsets(top: 230, leading: -30, bottom: 0, trailing: 0))
