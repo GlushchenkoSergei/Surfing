@@ -39,6 +39,10 @@ struct ContentView: View {
             
             FrameView()
                 .foregroundColor(Color("background"))
+//                .foregroundColor(Color.red)
+
+            
+            
             
             SunView()
                 .frame(width: 160, height: 160)

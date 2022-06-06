@@ -51,9 +51,9 @@ struct FrameForWaves: View {
                     .padding(EdgeInsets(top: -330, leading: 0, bottom: 0, trailing: 0))
                    
                 
-                Wave()
+                WaveClon()
                     .frame(width: 120, height: 120)
-                    .padding(EdgeInsets(top: 60, leading: 0, bottom: 0, trailing: 0))
+                    .padding(EdgeInsets(top: 80, leading: -130, bottom: 0, trailing: 0))
                     
         }
             
